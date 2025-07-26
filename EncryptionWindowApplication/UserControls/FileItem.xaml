@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="EncryptionWindowApplication.UserControls.FileItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EncryptionWindowApplication.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Border BorderBrush="Black" BorderThickness="1">
+        <Grid x:Name="MainGrid" MouseDown="SetActive">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1.4*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.8*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Image VerticalAlignment="Center" Width="40" Height="40"
+                Grid.RowSpan="2" x:Name="FileIconImage"></Image>
+            
+            <TextBlock Grid.Row="0" Grid.Column="1" FontSize="30" x:Name="FileNameTextBlock"></TextBlock>
+
+            <TextBlock Grid.Column="1" Grid.Row="1" FontSize="15" x:Name="PathTextBlock"></TextBlock>
+
+            <TextBlock Grid.Column="2" Grid.Row="0" FontSize="25" VerticalAlignment="Center"
+                Grid.RowSpan="2" x:Name="EditionDateTextBlock"></TextBlock>
+        </Grid>
+    </Border>
+</UserControl>
