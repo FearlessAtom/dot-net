@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\Images\Icons\atm.png" />
+    <None Remove="Data\Images\Icons\bank.png" />
+    <None Remove="Data\Images\Logos\a.png" />
+    <None Remove="Data\Images\Logos\alfa.png" />
+    <None Remove="Data\Images\Logos\creditagricole.png" />
+    <None Remove="Data\Images\Logos\nbu.png" />
+    <None Remove="Data\Images\Logos\opt.png" />
+    <None Remove="Data\Images\Logos\oschad.png" />
+    <None Remove="Data\Images\Logos\privat.png" />
+    <None Remove="Data\Images\Logos\procreditbank.png" />
+    <None Remove="Data\Images\Logos\pumb.png" />
+    <None Remove="Data\Images\Logos\raiffeisen.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Images\Logos\alfa.png" />
+    <Resource Include="Data\Images\Logos\procreditbank.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DependancyInjection" Version="1.0.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0-rc.1.24431.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary\ClassLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Images\Icons\atm.png" />
+    <Resource Include="Data\Images\Icons\bank.png" />
+    <Resource Include="Data\Images\Logos\a.png" />
+    <Resource Include="Data\Images\Logos\creditagricole.png" />
+    <Resource Include="Data\Images\Logos\nbu.png" />
+    <Resource Include="Data\Images\Logos\opt.png" />
+    <Resource Include="Data\Images\Logos\oschad.png" />
+    <Resource Include="Data\Images\Logos\privat.png" />
+    <Resource Include="Data\Images\Logos\pumb.png" />
+    <Resource Include="Data\Images\Logos\raiffeisen.png" />
+  </ItemGroup>
+
+</Project>

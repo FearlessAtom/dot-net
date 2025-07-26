@@ -1,0 +1,17 @@
+﻿<UserControl MouseDown="OpenATM" Cursor="Hand" x:Class="WindowApplication.UserControls.ATMsListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="100" d:DesignWidth="500">
+    <Border Background="AliceBlue" BorderBrush="Black" BorderThickness="1" Padding="5">
+        <Grid>
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="NameTextBlock" FontSize="27" FontFamily="Verdana">Atom</TextBlock>
+                <TextBlock Foreground="DimGray" x:Name="AddressTextBlock" FontSize="20" FontFamily="Verdana">Atom</TextBlock>
+            </StackPanel>
+            <Image x:Name="LogoImage" HorizontalAlignment="Right" Width="70" Height="70"></Image>
+        </Grid>
+    </Border>
+</UserControl>

@@ -1,0 +1,64 @@
+﻿<UserControl Background="Transparent" x:Class="WindowApplication.UserControls.PinChangeFormUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+            <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontFamily="Verdana" FontSize="30" Grid.Row="4" Grid.Column="2">Pin Change</TextBlock>
+        <Border Background="AliceBlue" BorderBrush="Black" BorderThickness="1" Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2" Grid.RowSpan="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBox Margin="5" Grid.Row="0" FontFamily="Verdana" FontSize="45" Grid.Column="1" x:Name="CardNumberTextBox"></TextBox>
+                <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Verdana">Card number: </TextBlock>
+                <PasswordBox Grid.Row="1" Margin="5" FontFamily="Verdana" FontSize="45" Grid.Column="1" x:Name="CurrentPinCodeTextBox"></PasswordBox>
+                <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Verdana">Current pin code: </TextBlock>
+                <PasswordBox Margin="5" Grid.Row="2" FontFamily="Verdana" FontSize="45" Grid.Column="1" x:Name="NewPinCodeTextBox"></PasswordBox>
+                <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Verdana">New pin code: </TextBlock>
+                <PasswordBox Margin="5" Grid.Row="3" FontFamily="Verdana" FontSize="45" Grid.Column="1" x:Name="ConfirmPinCodeTextBox"></PasswordBox>
+                <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Verdana">Confirm pin code: </TextBlock>
+                <Button Margin="5" Background="AliceBlue" BorderBrush="Black" BorderThickness="1" FontFamily="Verdana"
+                        FontSize="30" Grid.Row="4" Grid.Column="0" Click="CloseForm">
+                    Cancel
+                </Button>
+                <Button Margin="5" Background="AliceBlue" BorderBrush="Black" BorderThickness="1" FontFamily="Verdana"
+                        FontSize="30" Grid.Row="4" Grid.Column="1" Click="Entered">
+                    Enter
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

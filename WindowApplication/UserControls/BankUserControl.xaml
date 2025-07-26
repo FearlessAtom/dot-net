@@ -1,0 +1,94 @@
+﻿<UserControl Background="LightSteelBlue" x:Class="WindowApplication.UserControls.BankUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="700" d:DesignWidth="600">
+       <Grid>
+        <StackPanel
+            Grid.Column="2"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom">
+            <TextBlock
+                FontFamily="Verdana"
+                FontSize="40"
+                HorizontalAlignment="Center"
+                Text="ATM"
+                VerticalAlignment="Center"
+                x:Name="NameTextBlock">
+                Bank
+            </TextBlock>
+            <Image
+                Height="75"
+                Margin="5"
+                Source="../Data/Images/Icons/atm.png"
+                Width="75"
+                x:Name="LogoPath" />
+        </StackPanel>
+        <Button
+            FontSize="30"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Grid.Row="7"
+            Grid.Column="5"
+            Click="OpenATM"
+            Margin="5"
+            Background="AliceBlue"
+        >Open ATM</Button>
+        <Button
+            FontSize="30"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Grid.Row="6"
+            Grid.Column="5"
+            Click="CreateAccount"
+            Margin="5"
+            Background="AliceBlue"
+        >Create Account</Button>
+        <Button
+            Grid.Column="5"
+            FontSize="30"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Grid.Row="8"
+            Click="PinChange"
+            Margin="5"
+            Background="AliceBlue"
+        >Pin Change</Button>
+        <Button
+            Grid.Column="0"
+            FontSize="30"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Grid.Row="10"
+            Click="CloseBank"
+            Margin="5"
+            Background="AliceBlue"
+        >Back</Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</UserControl>

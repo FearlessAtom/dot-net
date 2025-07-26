@@ -1,0 +1,109 @@
+﻿<UserControl
+    d:DesignHeight="700"
+    d:DesignWidth="600"
+    mc:Ignorable="d"
+    x:Class="WindowApplication.UserControls.ATMLoginUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid Background="LightSteelBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel
+            Grid.Column="2"
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal"
+            VerticalAlignment="Bottom">
+            <TextBlock
+                FontFamily="Verdana"
+                FontSize="40"
+                HorizontalAlignment="Center"
+                Text="ATM"
+                VerticalAlignment="Center"
+                x:Name="NameTextBlock" />
+            <Image
+                Height="75"
+                Margin="5"
+                Source="../Data/Images/Icons/atm.png"
+                Width="75"
+                x:Name="LogoPath" />
+        </StackPanel>
+        <Border
+            BorderBrush="Black"
+            BorderThickness="1"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Grid.RowSpan="3"
+            Grid.Row="4">
+            <Grid Background="AliceBlue">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label FontSize="40" VerticalAlignment="Center">
+                    Card number:
+                </Label>
+                <TextBox
+                    Background="AliceBlue"
+                    BorderBrush="Black"
+                    FontSize="45"
+                    Grid.Column="1"
+                    Margin="5"
+                    x:Name="CardNumberTextBox" />
+                <Label
+                    FontSize="40"
+                    Grid.Row="1"
+                    VerticalAlignment="Center">
+                    Pin code:
+                </Label>
+                <PasswordBox
+                    Background="AliceBlue"
+                    BorderBrush="Black"
+                    FontSize="45"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    Margin="5"
+                    x:Name="PinCodePasswordBox" />
+                <Button Click="Reset" Margin="5" BorderBrush="Black" BorderThickness="1" Background="AliceBlue" FontSize="30" Grid.Row="2" Grid.Column="0">Reset</Button>
+                <Button Click="Enter" Margin="5" BorderBrush="Black" BorderThickness="1" Background="AliceBlue" FontSize="30" Grid.Row="2" Grid.Column="1">Enter</Button>
+            </Grid>
+        </Border>
+        <Button
+            BorderBrush="Black"
+            BorderThickness="1"
+            FontSize="30"
+            Grid.Row="10"
+            Background="AliceBlue"
+            Click="CloseATM"
+            Margin="5">
+            Back
+        </Button>
+    </Grid>
+</UserControl>
